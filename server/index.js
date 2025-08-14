@@ -25,7 +25,7 @@ const mongoose = require("mongoose");
 //   family: 4,                      // IPv4
 // };
 
-
+// 이 부분 나중에 몽고db 연결로 수정해야함
 // mongoose.connect(config.mongoURI)
 //   .then(() => console.log('MongoDB Connected...'))
 //   .catch(err => console.log(err));
