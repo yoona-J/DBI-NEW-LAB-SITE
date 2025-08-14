@@ -1,0 +1,224 @@
+/* Publications Page Styles */
+
+.publications-main {
+  padding: var(--space-4xl) 0;
+  background: var(--background);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-4xl);
+}
+
+.publications-title {
+  color: var(--brand);
+  font-size: 28px;
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  margin-left: 75px;
+}
+
+.publications-subtitle {
+  color: var(--text-primary);
+  font-size: 20px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  margin-bottom: var(--space-2xl);
+  margin-left: 75px;
+}
+
+/* Year Filter Buttons */
+.year-filters {
+  display: flex;
+  gap: var(--space-md);
+  margin-left: 75px;
+  margin-bottom: var(--space-3xl);
+}
+
+.year-filter {
+  width: 80px;
+  height: 30px;
+  border: 1px solid var(--brand);
+  border-radius: 7px;
+  background: transparent;
+  color: var(--brand);
+  font-size: 15px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-normal) ease;
+}
+
+.year-filter:hover {
+  background: rgba(14, 74, 132, 0.1);
+}
+
+.year-filter.active {
+  background: var(--brand);
+  color: white;
+}
+
+/* Publications List */
+.publications-list {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.publication-item {
+  display: flex;
+  align-items: center;
+  background: #EDEDED;
+  border-radius: 5px;
+  padding: var(--space-lg) var(--space-md);
+  margin-bottom: var(--space-md);
+  gap: var(--space-md);
+  transition: background-color var(--transition-normal) ease;
+}
+
+.publication-item:hover {
+  background: #E0E0E0;
+}
+
+.publication-chevron {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+.publication-title {
+  flex: 1;
+  font-size: 15px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.publication-link {
+  font-size: 16px;
+  color: var(--brand);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: color var(--transition-normal) ease;
+}
+
+.publication-link:hover {
+  color: var(--brand-dark);
+}
+
+/* Sub-navigation Bar (기존 스타일 유지) */
+.publications-sub-nav {
+  display: flex;
+  background: var(--brand);
+  width: 134px;
+  height: 81px;
+  margin-left: 75px;
+  margin-bottom: var(--space-3xl);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.sub-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  cursor: pointer;
+  transition: background-color var(--transition-normal) ease;
+}
+
+.sub-nav-item:first-child {
+  background: var(--brand);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sub-nav-item:last-child {
+  background: transparent;
+}
+
+.sub-nav-item span {
+  font-size: 14px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+.sub-nav-item:last-child span {
+  color: var(--text-muted);
+}
+
+.sub-nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sub-nav-item.active {
+  background: var(--brand);
+}
+
+.sub-nav-item.active span {
+  color: white;
+}
+
+/* Publications Content */
+.publications-content {
+  margin-top: var(--space-2xl);
+  padding: 0 var(--space-4xl);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-lg);
+  }
+  
+  .publications-title,
+  .publications-subtitle {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .year-filters {
+    margin-left: 0;
+    justify-content: center;
+  }
+  
+  .publications-list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .publications-sub-nav {
+    margin: 0 auto var(--space-3xl) auto;
+  }
+  
+  .publications-content {
+    padding: 0;
+  }
+  
+  .year-filter {
+    width: 70px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .year-filters {
+    gap: var(--space-sm);
+  }
+  
+  .year-filter {
+    width: 60px;
+    height: 26px;
+    font-size: 13px;
+  }
+  
+  .publication-title {
+    font-size: 14px;
+  }
+}

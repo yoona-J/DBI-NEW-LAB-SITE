@@ -5,7 +5,8 @@ import App from './App'
 
 const Home = lazy(() => import('./pages/Home'))
 const Research = lazy(() => import('./pages/Research'))
-const Publications = lazy(() => import('./pages/Publications'))
+const SelectedPublications = lazy(() => import('./pages/SelectedPublications'))
+const WorkInProgressPublications = lazy(() => import('./pages/WorkInProgressPublications'))
 const Members = lazy(() => import('./pages/Members'))
 const Projects = lazy(() => import('./pages/Projects'))
 const Courses = lazy(() => import('./pages/Courses'))
@@ -17,12 +18,13 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
-      { path: 'Research', element: <Research /> },
-      { path: 'Publications', element: <Publications /> },
-      { path: 'Members', element: <Members /> },
-      { path: 'Projects', element: <Projects /> },
-      { path: 'Courses', element: <Courses /> },
-      { path: 'News', element: <News /> },
+      { path: 'research', element: <Research /> },
+      { path: 'selected-publications', element: <SelectedPublications /> },
+      { path: 'work-in-progress-publications', element: <WorkInProgressPublications /> },
+      { path: 'members', element: <Members /> },
+      { path: 'projects', element: <Projects /> },
+      { path: 'courses', element: <Courses /> },
+      { path: 'news', element: <News /> },
     ],
   },
 ])

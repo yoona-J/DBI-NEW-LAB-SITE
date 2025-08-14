@@ -1,15 +1,17 @@
+import React from 'react'
 import HeroSection from '../components/HeroSection'
 import { Carousel } from 'antd'
 import SAMPLE_1 from '../assets/SAMPLE_1.png'
 import SAMPLE_2 from '../assets/SAMPLE_2.png'
 import SAMPLE_3 from '../assets/SAMPLE_3.png'
 import SAMPLE_4 from '../assets/SAMPLE_4.png'
+import '../styles/Home.css'
 
 export default function Home() {
   const autoplaySpeed = 4000
 
   const imageStyle = {
-    height: '219px',
+    height: '280px', // 고정 높이로 설정
     width: '100%',
     objectFit: 'cover',
     borderRadius: '8px', // 이미지 자체에만 테두리 둥글기 적용
@@ -47,53 +49,46 @@ export default function Home() {
       {/* Hero Section - 첫 페이지 크기 */}
       <HeroSection />
 
-      {/* Main Content - 하나의 뭉탱이로 묶기 */}
-      <div className="main-content">
-        <div className="content-wrapper">
-          {/* Diagram Section - 좌측 */}
-          <section className="diagram-section-left">
-            <div className="diagram-content">
-              <Carousel 
-                autoplay={{ dotDuration: true }} 
-                autoplaySpeed={autoplaySpeed}
-                dots={{ position: 'bottom' }}
-                effect="fade"
-              >
-                <div>
-                  <img src={SAMPLE_1} alt="Sample 1" style={imageStyle} />
-                </div>
-                <div>
-                  <img src={SAMPLE_2} alt="Sample 2" style={imageStyle} />
-                </div>
-                <div>
-                  <img src={SAMPLE_3} alt="Sample 3" style={imageStyle} />
-                </div>
-                <div>
-                  <img src={SAMPLE_4} alt="Sample 4" style={imageStyle} />
-                </div>
-              </Carousel>
-            </div>
-          </section>
+      {/* Main Content - carousel과 news를 직접 배치 */}
+      <div className="content-sections">
+        {/* Carousel - 좌측 */}
+        <Carousel 
+          autoplay={{ dotDuration: true }} 
+          autoplaySpeed={autoplaySpeed}
+          dots={{ position: 'bottom' }}
+          effect="fade"
+          className="carousel-component"
+        >
+          <div>
+            <img src={SAMPLE_1} alt="Sample 1" style={imageStyle} />
+          </div>
+          <div>
+            <img src={SAMPLE_2} alt="Sample 2" style={imageStyle} />
+          </div>
+          <div>
+            <img src={SAMPLE_3} alt="Sample 3" style={imageStyle} />
+          </div>
+          <div>
+            <img src={SAMPLE_4} alt="Sample 4" style={imageStyle} />
+          </div>
+        </Carousel>
 
-          {/* News Section - 우측 */}
-          <section className="news-section-right">
-            <div className="news-content">
-              <h2 className="news-title">NEWS</h2>
-              <div className="news-header">
-                <span className="news-header-title">제목</span>
-                <span className="news-header-date">작성일</span>
+        {/* News Section - 우측 */}
+        <div className="news-container">
+          <div className="news-title">NEWS</div>
+          <div className="news-header">
+            <span className="news-header-title">제목</span>
+            <span className="news-header-date">작성일</span>
+          </div>
+          <div className="news-divider"></div>
+          <div className="news-list">
+            {newsData.map((news, index) => (
+              <div key={index} className="news-item">
+                <span className="news-title-text">{news.title}</span>
+                <span className="news-date">{news.date}</span>
               </div>
-              <div className="news-divider"></div>
-              <div className="news-list">
-                {newsData.map((news, index) => (
-                  <div key={index} className="news-item">
-                    <span className="news-title-text">{news.title}</span>
-                    <span className="news-date">{news.date}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+            ))}
+          </div>
         </div>
       </div>
     </>
