@@ -1,3 +1,86 @@
 [
-    { "id": "n-1", "title": "Paper accepted at XYZ", "date": "2025-08-13", "link": "" }
-  ]  
+  {
+    "id": "n-1",
+    "title": "Received and started a research project (HY-202500000002838)",
+    "date": "2025-07-01",
+    "link": ""
+  },
+  {
+    "id": "n-2",
+    "title": "Lab member, Yoona Chung was awarded the AI SeoulTech scholarship.",
+    "date": "2025-06-15",
+    "link": ""
+  },
+  {
+    "id": "n-3",
+    "title": "Finished a research project (HY-202500000000191)",
+    "date": "2025-05-20",
+    "link": ""
+  },
+  {
+    "id": "n-4",
+    "title": "Received and started a research project (HY-202500000001616)",
+    "date": "2025-04-10",
+    "link": ""
+  },
+  {
+    "id": "n-5",
+    "title": "Received and started a research project (HY-202500000001158)",
+    "date": "2025-03-15",
+    "link": ""
+  },
+  {
+    "id": "n-6",
+    "title": "Visiting Researcher YongHyun Lee has joined DBI Lab",
+    "date": "2025-03-01",
+    "link": ""
+  },
+  {
+    "id": "n-7",
+    "title": "Agreement on Academic Research Using Pseudonymized Credit and Financial Data (Agreement with KCB)",
+    "date": "2025-02-20",
+    "link": ""
+  },
+  {
+    "id": "n-8",
+    "title": "Received and started a research project (HY-202500000000191)",
+    "date": "2025-01-15",
+    "link": ""
+  },
+  {
+    "id": "n-9",
+    "title": "Received and started a research project (HY-202400000003726)",
+    "date": "2024-12-10",
+    "link": ""
+  },
+  {
+    "id": "n-10",
+    "title": "Signed a memorandum of understanding with Toss Bank",
+    "date": "2024-11-25",
+    "link": ""
+  },
+  {
+    "id": "n-11",
+    "title": "Professor Eunchan Kim received the best TPC award from IEEE/KICS",
+    "date": "2024-10-30",
+    "link": ""
+  },
+  {
+    "id": "n-12",
+    "title": "Research Professor Jaehyuk Lee has joined DBI Lab",
+    "date": "2024-09-15",
+    "link": ""
+  },
+  {
+    "id": "n-13",
+    "title": "Received and started a research project (HY-202400000003279)",
+    "date": "2024-09-10",
+    "link": ""
+  },
+  {
+    "id": "n-14",
+    "title": "Data and business intelligence laboratory (DBI Lab.) has opened",
+    "date": "2024-09-01",
+    "link": ""
+  }
+]  

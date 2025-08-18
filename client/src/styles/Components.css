@@ -2,18 +2,19 @@
 
 /* Header Styles */
 .header {
-  background: var(--background);
+  background: #ffffff;
   border-bottom: 1px solid var(--border);
   height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--space-4xl);
-  position: sticky; /* 스크롤해도 고정 */
-  top: 0; /* 화면 상단에 고정 */
-  z-index: 1000; /* 다른 요소들 위에 표시 */
-  backdrop-filter: blur(10px); /* 배경 블러 효과 */
-  background: rgba(255, 255, 255, 0.95); /* 반투명 배경 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-left {
@@ -68,15 +69,7 @@
   gap: var(--space-xs);
 }
 
-.dropdown-toggle::after {
-  content: '▼';
-  font-size: 10px;
-  transition: transform var(--transition-normal) ease;
-}
 
-.nav-dropdown:hover .dropdown-toggle::after {
-  transform: rotate(180deg);
-}
 
 .dropdown-menu {
   position: absolute;
@@ -108,7 +101,7 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-.dropdown-item:first-child {
+.dropdown-item:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -172,7 +165,6 @@
   background: var(--brand);
   color: var(--text-on-brand);
   padding: var(--space-xl) 0;
-  text-align: center;
   font-family: var(--font-roboto);
   height: var(--footer-height);
   display: flex;
@@ -181,9 +173,31 @@
 }
 
 .footer-content {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--space-2xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-left {
+  text-align: left;
+  flex: 1;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.hyu-logo {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
 }
 
 .footer h3 {
@@ -249,6 +263,10 @@
   .header-nav {
     gap: var(--space-lg);
   }
+  
+  .footer-content {
+    max-width: 1000px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -275,6 +293,24 @@
   .hero-content {
     padding: 0 var(--space-2xl);
   }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: var(--space-lg);
+    text-align: center;
+  }
+  
+  .footer-left {
+    text-align: center;
+  }
+  
+  .footer-right {
+    justify-content: center;
+  }
+  
+  .hyu-logo {
+    width: 100px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -292,6 +328,14 @@
   
   .hero-content {
     padding: 0 var(--space-xl);
+  }
+  
+  .footer-content {
+    padding: 0 var(--space-lg);
+  }
+  
+  .hyu-logo {
+    width: 80px;
   }
 }
 

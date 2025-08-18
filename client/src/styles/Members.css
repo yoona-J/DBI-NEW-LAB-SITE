@@ -1,0 +1,384 @@
+.members-container {
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.members-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.content-container {
+  margin-top: 30px;
+}
+
+.content-section {
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.content-section h3 {
+  color: #0E4A84;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  color: #333;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Common Member Page Styles */
+.member-container {
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.member-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.lab-members-title {
+  color: #0E4A84;
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.current-category {
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.member-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-section {
+  max-width: 600px;
+  text-align: center;
+}
+
+.profile-image-container {
+  margin-bottom: 30px;
+}
+
+.profile-image {
+  width: 210px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.member-name {
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.member-title {
+  color: black;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 35px;
+  height: 1px;
+  background-color: black;
+  margin: 0 auto 20px;
+}
+
+.detailed-divider {
+  width: 25px;
+  height: 1px;
+  background-color: #cccccc;
+  margin: 0 auto 15px;
+}
+
+.affiliation-info {
+  margin-bottom: 30px;
+}
+
+.affiliation-item {
+  color: black;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.contact-section {
+  margin-top: 30px;
+}
+
+.contact-title {
+  color: black;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.contact-icons:empty {
+  margin-bottom: 0;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.contact-icon.linkedin {
+  background-color: #0077B5;
+}
+
+.contact-icon.orcid {
+  background-color: #A6CE39;
+}
+
+/* 링크가 없는 경우 아이콘 숨김 */
+.contact-icon.no-link {
+  display: none;
+}
+
+.email {
+  color: black;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* Researchers Page Styles */
+.researchers-section {
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.researcher-profile {
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Students Section */
+.students-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.student-category {
+  margin-bottom: 40px;
+}
+
+.category-title {
+  color: #0E4A84;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 550;
+  margin-bottom: 20px;
+  text-align: match-parent;
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.student-profile {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.student-profile:hover {
+  transform: translateY(-5px);
+}
+
+.profile-image-placeholder {
+  width: 120px;
+  height: 120px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.placeholder-x-line-1,
+.placeholder-x-line-2 {
+  position: absolute;
+  background-color: #ccc;
+  border-radius: 1px;
+}
+
+.placeholder-x-line-1 {
+  width: 40px;
+  height: 2px;
+  transform: rotate(45deg);
+}
+
+.placeholder-x-line-2 {
+  width: 40px;
+  height: 2px;
+  transform: rotate(-45deg);
+}
+
+.info-switch-container {
+  height: 50px;
+  position: relative;
+}
+
+.student-research-keyword,
+.student-research-focus {
+  color: #666;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 5px 0;
+  display: none;
+  transition: all 0.3s ease;
+  height: 20px;
+  line-height: 20px;
+}
+
+.student-profile:hover .student-research-keyword,
+.student-profile:hover .student-research-focus {
+  display: block;
+}
+
+.student-profile:hover .email {
+  display: none;
+}
+
+.email {
+  color: #666;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  height: 20px;
+  line-height: 20px;
+}
+
+.student-role {
+  color: #0E4A84;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin: 5px 0;
+  font-style: italic;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+  .students-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .students-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .student-profile {
+    max-width: 100%;
+  }
+  
+  .profile-image-placeholder {
+    width: 180px;
+    height: 240px;
+  }
+  
+  .placeholder-x-line-1,
+  .placeholder-x-line-2 {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-title {
+    font-size: 20px;
+  }
+  
+  .profile-image-placeholder {
+    width: 150px;
+    height: 200px;
+  }
+  
+  .placeholder-x-line-1,
+  .placeholder-x-line-2 {
+    width: 250px;
+  }
+  
+  .student-research-keyword,
+  .student-research-focus,
+  .student-role {
+    font-size: 12px;
+  }
+}

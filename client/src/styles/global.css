@@ -97,6 +97,33 @@ a {
   padding: 0 var(--space-md);
 }
 
+/* Layout stability fixes */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  min-height: 0;
+  margin-top: var(--header-height);
+}
+
+/* Prevent layout shifts during re-renders */
+* {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure proper stacking context */
+.header,
+.footer {
+  position: sticky;
+  z-index: 9999;
+}
+
 /* Global responsive utilities */
 @media (max-width: 768px) {
   .container {

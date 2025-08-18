@@ -1,0 +1,215 @@
+/* News Container */
+.news-container {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+  }
+  
+  /* Header Section */
+  .news-header {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .news-title {
+    color: #0E4A84;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  /* Timeline Container */
+  .timeline-container {
+    position: relative;
+    padding: 40px 0;
+    min-height: 800px;
+  }
+  
+  /* Timeline Line */
+  .timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 86px;
+    bottom: 86px;
+    width: 2px;
+    background-color: #0E4A84;
+    transform: translateX(-50%);
+  }
+  
+  /* News Item */
+  .news-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    transform: scale(0.95);
+  }
+  
+  .news-item:first-child {
+    margin-top: 0;
+  }
+  
+  .news-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .news-item.active {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  .news-item:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  
+  .news-item:nth-child(odd) .news-content {
+    text-align: left;
+    margin-right: 40px;
+  }
+  
+  .news-item:nth-child(even) .news-content {
+    text-align: right;
+    margin-left: 40px;
+  }
+  
+  /* Timeline Dot */
+  .timeline-dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: #ffa200;
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 3px #ffa2008f;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+  
+  .news-item.active .timeline-dot {
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 4px #0E4A84;
+  }
+  
+  /* News Content */
+  .news-content {
+    flex: 1;
+    max-width: 430px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .news-item.active .news-content {
+    background-color: #e3f2fd;
+    box-shadow: 0 4px 16px rgba(14, 74, 132, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* News Date */
+  .news-date {
+    color: #0E4A84;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .news-item.active .news-date {
+    color: #0E4A84;
+    font-size: 16px;
+  }
+  
+  /* News Title Text */
+  .news-title-text {
+    color: #333;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  
+  .news-item.active .news-title-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .news-container {
+      padding: 20px;
+    }
+    
+    .timeline-container {
+      padding: 20px 0;
+    }
+    
+    .news-item {
+      margin-bottom: 40px;
+    }
+    
+    .news-item:nth-child(odd),
+    .news-item:nth-child(even) {
+      flex-direction: column;
+    }
+    
+    .news-item:nth-child(odd) .news-content,
+    .news-item:nth-child(even) .news-content {
+      text-align: center;
+      margin: 20px 0 0 0;
+      max-width: 100%;
+    }
+    
+    .timeline-line {
+      left: 20px;
+    }
+    
+    .timeline-dot {
+      left: 20px;
+    }
+    
+    .news-content {
+      max-width: calc(100% - 60px);
+      margin-left: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .news-container {
+      padding: 15px;
+    }
+    
+    .news-title {
+      font-size: 24px;
+    }
+    
+    .news-content {
+      padding: 15px;
+      margin-left: 50px;
+      max-width: calc(100% - 50px);
+    }
+    
+    .timeline-dot {
+      width: 14px;
+      height: 14px;
+    }
+    
+    .news-item.active .timeline-dot {
+      width: 18px;
+      height: 18px;
+    }
+  }

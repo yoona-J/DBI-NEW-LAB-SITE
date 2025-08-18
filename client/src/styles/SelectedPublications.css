@@ -1,0 +1,81 @@
+.selected-publications-container {
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.publications-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.year-filter-container {
+  margin-bottom: 40px;
+}
+
+.publications-list {
+  margin-top: 30px;
+}
+
+/* Ant Design 컴포넌트 커스터마이징 */
+.ant-collapse {
+  border-radius: 8px;
+}
+
+.ant-collapse-item {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-collapse-header {
+  padding: 16px 20px !important;
+  background-color: white;
+  border-radius: 0 !important;
+}
+
+.ant-collapse-content {
+  border-top: 1px solid #f0f0f0;
+}
+
+.ant-collapse-content-box {
+  padding: 0 !important;
+}
+
+/* 버튼 호버 효과 */
+.ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(14, 74, 132, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .selected-publications-container {
+    padding: 30px 20px;
+  }
+  
+  .year-filter-container .ant-flex {
+    justify-content: center;
+  }
+  
+  .ant-btn {
+    font-size: 14px;
+    padding: 0 16px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .selected-publications-container {
+    padding: 20px 15px;
+  }
+  
+  .publications-header h1 {
+    font-size: 24px !important;
+  }
+  
+  .publications-header h2 {
+    font-size: 18px !important;
+  }
+}

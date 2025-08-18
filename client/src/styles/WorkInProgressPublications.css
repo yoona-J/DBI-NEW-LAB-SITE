@@ -1,0 +1,109 @@
+.work-in-progress-container {
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.publications-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.publications-list {
+  margin-top: 30px;
+}
+
+.publication-item {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 16px 20px;
+  transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+  background-color: #e8e8e8;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.publication-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.edit-icon {
+  color: #0E4A84;
+  font-size: 18px;
+  min-width: 20px;
+}
+
+.publication-title {
+  color: black;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  flex: 1;
+}
+
+/* Ant Design 버튼 커스터마이징 */
+.ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(14, 74, 132, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .work-in-progress-container {
+    padding: 30px 20px;
+  }
+  
+  .year-filter-container .ant-flex {
+    justify-content: center;
+  }
+  
+  .ant-btn {
+    font-size: 14px;
+    padding: 0 16px;
+    height: 36px;
+  }
+  
+  .publication-item {
+    padding: 14px 16px;
+  }
+  
+  .publication-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-in-progress-container {
+    padding: 20px 15px;
+  }
+  
+  .publications-header h1 {
+    font-size: 24px !important;
+  }
+  
+  .publications-header h2 {
+    font-size: 18px !important;
+  }
+  
+  .publication-item {
+    padding: 12px 14px;
+  }
+  
+  .publication-title {
+    font-size: 13px;
+  }
+  
+  .check-icon {
+    font-size: 16px;
+  }
+}
