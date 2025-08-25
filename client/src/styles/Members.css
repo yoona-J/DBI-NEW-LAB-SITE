@@ -190,6 +190,10 @@
   background-color: #A6CE39;
 }
 
+.contact-icon.github {
+  background-color: #000;
+}
+
 /* 링크가 없는 경우 아이콘 숨김 */
 .contact-icon.no-link {
   display: none;

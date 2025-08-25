@@ -1,5 +1,5 @@
 import React from 'react';
-import { LinkedinOutlined, IdcardOutlined } from '@ant-design/icons';
+import { GithubOutlined, IdcardOutlined } from '@ant-design/icons';
 import phd_img_1 from '../assets/phd_img_1.jpg';
 import phd_img_2 from '../assets/phd_img_2.jpg';
 import ms_img_1 from '../assets/ms_img_1.jpg';
@@ -25,6 +25,31 @@ export default function Students() {
           <div className="student-category">
             <h3 className="category-title">Ph.D. / Integrated Ph.D. Program</h3>
             <div className="students-grid">
+
+              <div className="student-profile">
+                <div className="profile-image-container">
+                  <img src={phd_img_2} alt="Yoona Chung" className="profile-image" />
+                </div>
+                
+                <div className="profile-info">
+                  <h1 className="member-name">Yoona Chung (정윤아)</h1>
+                  <p className="student-role">Lab Manager</p>
+                  <div className="info-switch-container">
+                    <p className="email">chungyn@hanyang.ac.kr</p>
+                    <p className="student-research-keyword">Solutions for Digital Divide</p>
+                    <p className="student-research-focus">Intelligent Systems, AI Applications</p>
+                  </div>
+                </div>
+                <div className="contact-icons">
+                  <a href="https://github.com/yoona-J" target="_blank" rel="noopener noreferrer" className="contact-icon github">
+                    <GithubOutlined />
+                  </a>
+                  <a href="https://orcid.org/0009-0003-8487-5743" target="_blank" rel="noopener noreferrer" className="contact-icon orcid">
+                    <IdcardOutlined />
+                  </a>
+                </div>
+              </div>
+
               <div className="student-profile">
                 <div className="profile-image-container">
                   <img src={phd_img_1} alt="JinSung Park" className="profile-image" />
@@ -42,19 +67,22 @@ export default function Students() {
 
               <div className="student-profile">
                 <div className="profile-image-container">
-                  <img src={phd_img_2} alt="Yoona Chung" className="profile-image" />
+                  <div className="profile-image-placeholder">
+                    <div className="placeholder-x-line-1"></div>
+                    <div className="placeholder-x-line-2"></div>
+                  </div>
                 </div>
                 
                 <div className="profile-info">
-                  <h1 className="member-name">Yoona Chung (정윤아)</h1>
-                  <p className="student-role">Lab Manager</p>
+                  <h1 className="member-name">Hosu Sin (신호수)</h1>
                   <div className="info-switch-container">
-                    <p className="email">chungyn@hanyang.ac.kr</p>
-                    <p className="student-research-keyword">Solutions for Digital Divide</p>
-                    <p className="student-research-focus">Intelligent Systems, AI Applications</p>
+                    <p className="email">@hanyang.ac.kr</p>
+                    <p className="student-research-keyword"></p>
+                    <p className="student-research-focus"></p>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
 
@@ -75,6 +103,11 @@ export default function Students() {
                     <p className="student-research-focus">Intelligent Physiology, AI Applications</p>
                   </div>
                 </div>
+                <div className="contact-icons">
+                  <a href="https://orcid.org/0009-0002-0278-8818" target="_blank" rel="noopener noreferrer" className="contact-icon orcid">
+                    <IdcardOutlined />
+                  </a>
+                </div>
               </div>
 
               <div className="student-profile">
@@ -89,6 +122,12 @@ export default function Students() {
                     <p className="student-research-keyword">Solutions for Healthcare Innovation</p>
                     <p className="student-research-focus">Medical Intelligence, AI Applications</p>
                   </div>
+                </div>
+
+                <div className="contact-icons">
+                  <a href="https://orcid.org/0009-0006-7228-0322" target="_blank" rel="noopener noreferrer" className="contact-icon orcid">
+                    <IdcardOutlined />
+                  </a>
                 </div>
               </div>
             </div>
@@ -111,6 +150,12 @@ export default function Students() {
                     <p className="student-research-focus">Intelligent UX, AI Applications</p>
                   </div>
                 </div>
+
+                <div className="contact-icons">
+                  <a href="https://github.com/gibyungkang" target="_blank" rel="noopener noreferrer" className="contact-icon github">
+                    <GithubOutlined />
+                  </a>
+                </div>
               </div>
 
               <div className="student-profile">
@@ -125,6 +170,12 @@ export default function Students() {
                     <p className="student-research-keyword">Solutions for Societal Impact</p>
                     <p className="student-research-focus">Intelligent Vision & Learning, AI Applications</p>
                   </div>
+                </div>
+
+                <div className="contact-icons">
+                  <a href="https://github.com/stickman1257" target="_blank" rel="noopener noreferrer" className="contact-icon github">
+                    <GithubOutlined />
+                  </a>
                 </div>
               </div>
 

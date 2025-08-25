@@ -25,7 +25,7 @@ export default function Researchers() {
             
             <div className="profile-info">
               <h1 className="member-name">Jaehyuk Lee, Ph.D.<br/>(이재혁)</h1>
-              <p className="member-title">Research Professor</p>
+              <p className="member-title">Visiting Scholar</p>
               
               <div className="divider"></div>
               
@@ -35,7 +35,11 @@ export default function Researchers() {
                 <p className="affiliation-item">Department of Information Systems</p>
               </div>
 
-              <div className="detailed-divider"></div>
+              {/* <div className="detailed-divider"></div> */}
+              <br />
+
+              <p className="member-title">Research Professor</p>
+              <div className="divider"></div>
 
               <div className="affiliation-info">
                 <p className="affiliation-item">Institute of IT Convergence Technology</p>
@@ -55,7 +59,7 @@ export default function Researchers() {
                     <IdcardOutlined />
                   </a> */}
                 </div>
-                <p className="email">Email: researcher1@hanyang.ac.kr</p>
+                <p className="email">Email: jhl9405@seoultech.ac.kr</p>
               </div>
             </div>
           </div>
@@ -78,7 +82,11 @@ export default function Researchers() {
                 <p className="affiliation-item">Department of Information Systems</p>
               </div>
 
-              <div className="detailed-divider"></div>
+              {/* <div className="detailed-divider"></div> */}
+              <br />
+
+              <p className="member-title">Researcher</p>
+              <div className="divider"></div>
 
               <div className="affiliation-info">
                 <p className="affiliation-item">Department of Radiology</p>
@@ -98,7 +106,7 @@ export default function Researchers() {
                     <IdcardOutlined />
                   </a> */}
                 </div>
-                <p className="email">Email: researcher2@hanyang.ac.kr</p>
+                <p className="email">Email: joshualeehyun21@gmail.com</p>
               </div>
             </div>
           </div>

@@ -2,15 +2,19 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import HeroSection from '../components/HeroSection'
 import { Carousel } from 'antd'
-import SAMPLE_1 from '../assets/SAMPLE_1.png'
-import SAMPLE_2 from '../assets/SAMPLE_2.png'
-import SAMPLE_3 from '../assets/SAMPLE_3.png'
-import SAMPLE_4 from '../assets/SAMPLE_4.png'
+
+import CarouselImg1 from '../assets/CarouselImg1.png'
+import CarouselImg2 from '../assets/CarouselImg2.png'
+import CarouselImg3 from '../assets/CarouselImg3.png'
+import CarouselImg4 from '../assets/CarouselImg4.png'
+import CarouselImg5 from '../assets/CarouselImg5.png'
+import CarouselImg6 from '../assets/CarouselImg6.png'
+import CarouselImg7 from '../assets/CarouselImg7.png'
 import '../styles/Home.css'
 
 export default function Home() {
   const navigate = useNavigate();
-  const autoplaySpeed = 4000
+  const autoplaySpeed = 1500
   const [newsData, setNewsData] = useState([]);
 
   const imageStyle = {
@@ -74,16 +78,25 @@ export default function Home() {
           className="carousel-component"
         >
           <div>
-            <img src={SAMPLE_1} alt="Sample 1" style={imageStyle} />
+            <img src={CarouselImg1} alt="CarouselImg1" style={imageStyle} />
           </div>
           <div>
-            <img src={SAMPLE_2} alt="Sample 2" style={imageStyle} />
+            <img src={CarouselImg2} alt="CarouselImg2" style={imageStyle} />
           </div>
           <div>
-            <img src={SAMPLE_3} alt="Sample 3" style={imageStyle} />
+            <img src={CarouselImg3} alt="CarouselImg3" style={imageStyle} />
           </div>
           <div>
-            <img src={SAMPLE_4} alt="Sample 4" style={imageStyle} />
+            <img src={CarouselImg4} alt="CarouselImg4" style={imageStyle} />
+          </div>
+          <div>
+            <img src={CarouselImg5} alt="CarouselImg5" style={imageStyle} />
+          </div>
+          <div>
+            <img src={CarouselImg6} alt="CarouselImg6" style={imageStyle} />
+          </div>
+          <div>
+            <img src={CarouselImg7} alt="CarouselImg7" style={imageStyle} />
           </div>
         </Carousel>
 
