@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-left">
           <h3>Data and Business Intelligence Lab.</h3>
-          <p>Department of Information Systems, Hanyang University</p>
+          <p>College of Engineering, Hanyang University</p>
           <p>Research and Development Building Room #708-1,</p>
           <p>222 Wangsimni-ro, Seongdong-gu, Seoul, South Korea, 04763</p>
-          <p className="copyright">COPYRIGHT © 2025 DBI Lab. ALL RIGHTS RESERVED.</p>
+          <p className="copyright">COPYRIGHT © DBI Lab. ALL RIGHTS RESERVED.</p>
         </div>
         <div className="footer-right">
           <img src={hyuLogo} alt="Hanyang University" className="hyu-logo" />
