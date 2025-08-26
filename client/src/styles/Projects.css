@@ -16,7 +16,7 @@
 .projects-title {
   color: #0E4A84;
   font-size: 28px;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   font-weight: 700;
   margin: 0;
   margin-bottom: 10px;
@@ -40,7 +40,7 @@
   border-top-right-radius: 5px;
   color: #0E4A84;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -71,17 +71,68 @@
   overflow: hidden;
 }
 
-.table-header {
+/* Desktop Table Styles (기본 스타일) */
+.projects-table-desktop .table-header {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   background: #ffffff;
   border-bottom: 1px solid #C4C4C4;
 }
 
+.projects-table-desktop .table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  border-bottom: 1px solid #C4C4C4;
+  min-height: 60px;
+}
+
+.projects-table-desktop .table-row:last-child {
+  border-bottom: none;
+}
+
+/* Tablet Table Styles (768px 이하) */
+.projects-table-tablet .table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: #ffffff;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.projects-table-tablet .table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-bottom: 1px solid #C4C4C4;
+  min-height: 60px;
+}
+
+.projects-table-tablet .table-row:last-child {
+  border-bottom: none;
+}
+
+/* Mobile Table Styles (480px 이하) */
+.projects-table-mobile .table-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #ffffff;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.projects-table-mobile .table-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-bottom: 1px solid #C4C4C4;
+  min-height: 60px;
+}
+
+.projects-table-mobile .table-row:last-child {
+  border-bottom: none;
+}
+
+/* Common Table Cell Styles */
 .header-cell {
   padding: 15px;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   font-weight: 700;
   color: black;
   text-align: center;
@@ -94,21 +145,10 @@
   background: white;
 }
 
-.table-row {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  border-bottom: 1px solid #C4C4C4;
-  min-height: 60px;
-}
-
-.table-row:last-child {
-  border-bottom: none;
-}
-
 .table-cell {
   padding: 15px;
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   font-weight: 400;
   color: black;
   text-align: center;
@@ -133,7 +173,7 @@
   padding: 60px 20px;
   color: #666;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
 }
 
 /* Responsive Design */
@@ -165,20 +205,51 @@
     border-bottom: 1px solid #0E4A84;
   }
   
-  .table-header,
-  .table-row {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-  
-  .header-cell,
-  .table-cell {
-    border-bottom: 1px solid #C4C4C4;
+  /* 768px 이하: project와 support만 표시 */
+  .projects-table-tablet .header-cell,
+  .projects-table-tablet .table-cell {
     justify-content: flex-start;
+    text-align: left;
+    padding: 12px 15px;
   }
   
-  .header-cell:last-child,
-  .table-cell:last-child {
-    border-bottom: none;
+  .projects-table-tablet .project-cell {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .projects-table-tablet .support-cell {
+    font-size: 13px;
+    color: #666;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    padding: 10px;
+  }
+  
+  .projects-title {
+    font-size: 24px;
+  }
+  
+  .tab-button {
+    height: 45px;
+    font-size: 14px;
+  }
+  
+  /* 480px 이하: project만 표시 */
+  .projects-table-mobile .header-cell,
+  .projects-table-mobile .table-cell {
+    justify-content: flex-start;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  .projects-table-mobile .project-cell {
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 }

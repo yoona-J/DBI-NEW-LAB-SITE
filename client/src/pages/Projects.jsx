@@ -1,8 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Projects.css';
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState('current');
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const projectsData = {
     current: [
@@ -87,8 +97,47 @@ export default function Projects() {
       );
     }
 
+    // 480px 이하: project만 표시
+    if (screenWidth <= 480) {
+      return (
+        <div className="projects-table projects-table-mobile">
+          <div className="table-header">
+            <div className="header-cell project-header">Project</div>
+          </div>
+          <div className="table-body">
+            {projects.map((project, index) => (
+              <div key={index} className="table-row">
+                <div className="table-cell project-cell">{project.project}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    // 768px 이하: project와 support만 표시
+    if (screenWidth <= 768) {
+      return (
+        <div className="projects-table projects-table-tablet">
+          <div className="table-header">
+            <div className="header-cell project-header">Project</div>
+            <div className="header-cell support-header">Support</div>
+          </div>
+          <div className="table-body">
+            {projects.map((project, index) => (
+              <div key={index} className="table-row">
+                <div className="table-cell project-cell">{project.project}</div>
+                <div className="table-cell support-cell">{project.support}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    // 768px 이상: 모든 컬럼 표시
     return (
-      <div className="projects-table">
+      <div className="projects-table projects-table-desktop">
         <div className="table-header">
           <div className="header-cell project-header">Project</div>
           <div className="header-cell support-header">Support</div>

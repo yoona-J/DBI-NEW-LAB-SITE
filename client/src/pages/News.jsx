@@ -3,6 +3,7 @@ import '../styles/News.css';
 
 export default function News() {
   const [activeNewsIndex, setActiveNewsIndex] = useState(0);
+  const [timelineHeight, setTimelineHeight] = useState({ top: 8, bottom: 8 });
   const timelineRef = useRef(null);
 
   const newsData = [
@@ -24,7 +25,7 @@ export default function News() {
     {
       id: 'n-4',
       date: 'April 2025',
-      title: 'Received and started a research project (HY-202500000001616)'
+      title: 'Received and started a research project (HY-500000000001616)'
     },
     {
       id: 'n-5',
@@ -78,6 +79,33 @@ export default function News() {
     }
   ];
 
+  // 타임라인 높이 계산 함수
+  const calculateTimelineHeight = () => {
+    if (timelineRef.current && window.innerWidth <= 1100) {
+      const timeline = timelineRef.current;
+      const newsItems = timeline.querySelectorAll('.news-item');
+      
+      if (newsItems.length > 0) {
+        const firstItem = newsItems[0];
+        const lastItem = newsItems[newsItems.length - 1];
+        
+        const firstItemRect = firstItem.getBoundingClientRect();
+        const lastItemRect = lastItem.getBoundingClientRect();
+        const timelineRect = timeline.getBoundingClientRect();
+        
+        // 첫 번째 원의 중앙 위치 (원의 반지름 8px 고려)
+        const firstDotCenter = firstItemRect.top - timelineRect.top + 8;
+        // 마지막 원의 중앙 위치 (원의 반지름 8px 고려)
+        const lastDotCenter = lastItemRect.top - timelineRect.top + 8;
+        
+        setTimelineHeight({
+          top: firstDotCenter,
+          bottom: timelineRect.height - lastDotCenter
+        });
+      }
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (timelineRef.current) {
@@ -116,8 +144,16 @@ export default function News() {
       }
     };
 
+    // 타임라인 높이 계산
+    calculateTimelineHeight();
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', calculateTimelineHeight);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', calculateTimelineHeight);
+    };
   }, [newsData.length]);
 
   return (
@@ -130,6 +166,17 @@ export default function News() {
       {/* Timeline Section */}
       <div className="timeline-container" ref={timelineRef}>
         <div className="timeline-line"></div>
+        
+        {/* 1100px 이하에서만 표시되는 동적 타임라인 선 */}
+        {window.innerWidth <= 1100 && (
+          <div 
+            className="timeline-line-mobile"
+            style={{
+              top: `${timelineHeight.top}px`,
+              bottom: `${timelineHeight.bottom}px`
+            }}
+          ></div>
+        )}
         
         {newsData.map((news, index) => (
           <div 
