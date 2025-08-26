@@ -1,20 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
-import { API_CONFIG, apiRequest } from '../config/api'
+import heroData from '../data/hero.json'
 
 export default function HeroSection() {
-  const [heroText, setHeroText] = useState("Welcome to Data and Business Intelligence Lab!")
+  const [heroText, setHeroText] = useState(heroData.text)
   const particlesRef = useRef(null)
-
-  // 외부에서 텍스트를 가져오는 함수
-  const fetchHeroText = async () => {
-    try {
-      const data = await apiRequest(API_CONFIG.HERO.GET_TEXT)
-      setHeroText(data.text)
-    } catch (error) {
-      console.log('Hero 텍스트를 가져오는데 실패했습니다:', error)
-      // API 실패 시 기본 텍스트 유지
-    }
-  }
 
   // particles.js 초기화
   const initParticles = () => {
@@ -132,10 +121,8 @@ export default function HeroSection() {
     }
   }
 
-  // 컴포넌트 마운트 시 외부에서 텍스트 가져오기 및 particles 초기화
+  // 컴포넌트 마운트 시 particles 초기화
   useEffect(() => {
-    fetchHeroText()
-    
     // particles.js가 로드된 후 초기화
     const loadParticles = () => {
       if (window.particlesJS) {
