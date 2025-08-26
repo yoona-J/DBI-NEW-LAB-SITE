@@ -7,7 +7,7 @@ import { router } from './routes.jsx'
 import './assets/fonts/Roboto-Regular.woff2'
 import './assets/fonts/Roboto-Medium.woff2'
 import './assets/fonts/Roboto-Light.woff2'
-import './assets/fonts/DungGeunMo.woff2'
+import './assets/fonts/DungGeunMo.otf'
 
 import './styles/global.css'
 import 'antd/dist/reset.css'
