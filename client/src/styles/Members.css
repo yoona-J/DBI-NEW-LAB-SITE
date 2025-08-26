@@ -365,7 +365,26 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .member-container {
+    padding: 15px;
+    padding-bottom: 60px;
+  }
+  
+  .member-header {
+    margin-bottom: 30px;
+  }
+  
+  .lab-members-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .current-category {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
   .category-title {
     font-size: 20px;
   }

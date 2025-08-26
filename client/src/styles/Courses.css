@@ -125,6 +125,7 @@
 @media (max-width: 768px) {
   .courses-container {
     padding: 25px;
+    padding-bottom: 60px;
   }
   
   .courses-title {
@@ -161,9 +162,19 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .courses-container {
     padding: 15px;
+    padding-bottom: 70px;
+  }
+  
+  .courses-header {
+    margin-bottom: 30px;
+  }
+  
+  .courses-title {
+    font-size: 24px;
+    margin-bottom: 8px;
   }
   
   .courses-tabs {

@@ -21,6 +21,20 @@
   margin-left: 75px;
 }
 
+@media (max-width: 600px) {
+  .container {
+    padding: 0 var(--space-md);
+    padding-bottom: 70px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-left: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
+
 .research-cards {
   display: flex;
   gap: var(--space-md);
