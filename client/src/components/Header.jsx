@@ -1,12 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react'
+import ReactDOM from 'react-dom'
 import { Link, useLocation } from 'react-router-dom'
 
 export default function Header() {
   const location = useLocation()
   const [showPublicationsMenu, setShowPublicationsMenu] = useState(false)
   const [showMembersMenu, setShowMembersMenu] = useState(false)
+  const [showMobileMenu, setShowMobileMenu] = useState(false)
   const publicationsDropdownRef = useRef(null)
   const membersDropdownRef = useRef(null)
+  const mobileMenuRef = useRef(null)
 
   const isActive = (path) => {
     return location.pathname === path
@@ -24,6 +27,14 @@ export default function Header() {
     e.stopPropagation()
     setShowMembersMenu(!showMembersMenu)
     setShowPublicationsMenu(false) // 다른 드롭다운 닫기
+  }
+
+  const toggleMobileMenu = () => {
+    setShowMobileMenu(!showMobileMenu)
+  }
+
+  const closeMobileMenu = () => {
+    setShowMobileMenu(false)
   }
 
   const closePublicationsMenu = () => {
@@ -51,6 +62,9 @@ export default function Header() {
       if (membersDropdownRef.current && !membersDropdownRef.current.contains(event.target)) {
         setShowMembersMenu(false)
       }
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+        setShowMobileMenu(false)
+      }
     }
 
     document.addEventListener('mousedown', handleClickOutside)
@@ -58,6 +72,19 @@ export default function Header() {
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [])
+
+  // 모바일 메뉴 열림 시 body 스크롤 방지
+  useEffect(() => {
+    if (showMobileMenu) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [showMobileMenu])
 
   return (
     <header className="header">
@@ -67,6 +94,7 @@ export default function Header() {
         </Link>
       </div>
       
+      {/* Desktop Navigation */}
       <nav className="header-nav">
         <Link 
           to="/research" 
@@ -180,6 +208,133 @@ export default function Header() {
           News
         </Link>
       </nav>
+
+      {/* Mobile Menu Button */}
+      {!showMobileMenu && (
+        <button className="mobile-menu-button" onClick={toggleMobileMenu}>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+        </button>
+      )}
+
+      {/* Mobile Menu Overlay */}
+      {showMobileMenu && ReactDOM.createPortal(
+        <div className="mobile-menu-overlay">
+          <div className="mobile-menu-content" ref={mobileMenuRef}>
+            <div className="mobile-menu-header">
+              <button className="mobile-menu-close" onClick={closeMobileMenu}>
+                ×
+              </button>
+            </div>
+            
+            <nav className="mobile-menu-nav">
+              <Link 
+                to="/research" 
+                className={`mobile-nav-link ${isActive('/research') ? 'active' : ''}`}
+                onClick={() => {
+                  closeMobileMenu()
+                  scrollToTop()
+                }}
+              >
+                Research
+              </Link>
+              
+              <div className="mobile-menu-section">
+                <h4>Publications</h4>
+                <Link 
+                  to="/selected-publications" 
+                  className="mobile-nav-link"
+                  onClick={() => {
+                    closeMobileMenu()
+                    scrollToTop()
+                  }}
+                >
+                  Selected
+                </Link>
+                <Link 
+                  to="/work-in-progress-publications" 
+                  className="mobile-nav-link"
+                  onClick={() => {
+                    closeMobileMenu()
+                    scrollToTop()
+                  }}
+                >
+                  Work-in-Progress
+                </Link>
+              </div>
+              
+              <div className="mobile-menu-section">
+                <h4>Members</h4>
+                <Link 
+                  to="/professor" 
+                  className="mobile-nav-link"
+                  onClick={() => {
+                    closeMobileMenu()
+                    scrollToTop()
+                  }}
+                >
+                  Professor
+                </Link>
+                <Link 
+                  to="/researchers" 
+                  className="mobile-nav-link"
+                  onClick={() => {
+                    closeMobileMenu()
+                    scrollToTop()
+                  }}
+                >
+                  Researchers
+                </Link>
+                <Link 
+                  to="/students" 
+                  className="mobile-nav-link"
+                  onClick={() => {
+                    closeMobileMenu()
+                    scrollToTop()
+                  }}
+                >
+                  Students
+                </Link>
+              </div>
+              
+              <Link 
+                to="/projects" 
+                className={`mobile-nav-link ${isActive('/projects') ? 'active' : ''}`}
+                onClick={() => {
+                  closeMobileMenu()
+                  scrollToTop()
+                }}
+              >
+                Projects
+              </Link>
+              
+              <Link 
+                to="/courses" 
+                className={`mobile-nav-link ${isActive('/courses') ? 'active' : ''}`}
+                onClick={() => {
+                  closeMobileMenu()
+                  scrollToTop()
+                }}
+              >
+                Courses
+              </Link>
+              
+              <Link 
+                to="/news" 
+                className={`mobile-nav-link ${isActive('/news') ? 'active' : ''}`}
+                onClick={() => {
+                  closeMobileMenu()
+                  scrollToTop()
+                }}
+              >
+                News
+              </Link>
+            </nav>
+          </div>
+        </div>,
+        document.body
+      )}
     </header>
   )
 }

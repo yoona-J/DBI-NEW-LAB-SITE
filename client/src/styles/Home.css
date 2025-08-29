@@ -263,10 +263,16 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .content-sections {
-    padding: 20px 15px;
+    padding: 75px 15px 20px 15px;
+    padding-bottom: 70px;
     gap: 20px;
+  }
+  
+  .home-news-title {
+    font-size: 24px;
+    margin-bottom: 8px;
   }
   
   .carousel-component {

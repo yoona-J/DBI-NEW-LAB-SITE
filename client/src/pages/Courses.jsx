@@ -3,25 +3,41 @@ import '../styles/Courses.css';
 import hanyangIcon from '../assets/hanyang_icon.png';
 import snuIcon from '../assets/snu_icon.png';
 
+// 한양대 코스 이미지들 import
+import OT_25 from '../assets/course_imgs/OT_25.png';
+import DS_25 from '../assets/course_imgs/DS_25.png';
+import ISD_fa25 from '../assets/course_imgs/ISD_fa25.png';
+import CD2_25 from '../assets/course_imgs/CD2_25.png';
+import ERP_25 from '../assets/course_imgs/ERP_25.png';
+import BIAI_25 from '../assets/course_imgs/BIAI_25.png';
+import CD1_25 from '../assets/course_imgs/CD1_25.png';
+import ISD_sp25 from '../assets/course_imgs/ISD_sp25.png';
+import OT_24 from '../assets/course_imgs/OT_24.png';
+import ISA_24 from '../assets/course_imgs/ISA_24.png';
+
+// 서울대 코스 이미지들 import
+import IS_24 from '../assets/course_imgs/IS_24.png';
+import IS_23 from '../assets/course_imgs/IS_23.png';
+
 export default function Courses() {
   const [activeTab, setActiveTab] = useState('hanyang');
 
   const hanyangCourses = [
-    { src: '/src/assets/course_imgs/OT_25.png', alt: 'OT 25' },
-    { src: '/src/assets/course_imgs/DS_25.png', alt: 'DS 25' },
-    { src: '/src/assets/course_imgs/ISD_fa25.png', alt: 'ISD Fall 25' },
-    { src: '/src/assets/course_imgs/CD2_25.png', alt: 'CD2 25' },
-    { src: '/src/assets/course_imgs/ERP_25.png', alt: 'ERP 25' },
-    { src: '/src/assets/course_imgs/BIAI_25.png', alt: 'BIAI 25' },
-    { src: '/src/assets/course_imgs/CD1_25.png', alt: 'CD1 25' },
-    { src: '/src/assets/course_imgs/ISD_sp25.png', alt: 'ISD Spring 25' },
-    { src: '/src/assets/course_imgs/OT_24.png', alt: 'OT 24' },
-    { src: '/src/assets/course_imgs/ISA_24.png', alt: 'ISA 24' }
+    { src: OT_25, alt: 'OT 25' },
+    { src: DS_25, alt: 'DS 25' },
+    { src: ISD_fa25, alt: 'ISD Fall 25' },
+    { src: CD2_25, alt: 'CD2 25' },
+    { src: ERP_25, alt: 'ERP 25' },
+    { src: BIAI_25, alt: 'BIAI 25' },
+    { src: CD1_25, alt: 'CD1 25' },
+    { src: ISD_sp25, alt: 'ISD Spring 25' },
+    { src: OT_24, alt: 'OT 24' },
+    { src: ISA_24, alt: 'ISA 24' }
   ];
 
   const snuCourses = [
-    { src: '/src/assets/course_imgs/IS_24.png', alt: 'IS 24' },
-    { src: '/src/assets/course_imgs/IS_23.png', alt: 'IS 23' }
+    { src: IS_24, alt: 'IS 24' },
+    { src: IS_23, alt: 'IS 23' }
   ];
 
   const currentCourses = activeTab === 'hanyang' ? hanyangCourses : snuCourses;

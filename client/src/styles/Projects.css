@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin: 0 auto;
   background-color: white;
-  min-height: 100vh;
+  height: auto;
 }
 
 /* Header Section */
@@ -61,6 +61,7 @@
 /* Projects Content */
 .projects-content {
   min-height: 400px;
+  margin-bottom: 40px;
 }
 
 /* Projects Table */
@@ -180,33 +181,45 @@
 @media (max-width: 768px) {
   .projects-container {
     padding: 15px;
+    padding-bottom: 60px;
+  }
+  
+  .projects-content {
+    margin-bottom: 30px;
   }
   
   .tabs-container {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0;
   }
   
   .tab-button {
-    width: 100%;
+    flex: 1;
     border-radius: 0;
     border-left: 1px solid #0E4A84;
     border-right: 1px solid #0E4A84;
+    font-size: 14px;
+    height: 45px;
   }
   
   .tab-button:first-child {
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   
   .tab-button:last-child {
-    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-bottom: 1px solid #0E4A84;
   }
   
   /* 768px 이하: project와 support만 표시 */
-  .projects-table-tablet .header-cell,
+  .projects-table-tablet .header-cell {
+    font-size: 14px;
+    padding: 10px 15px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
   .projects-table-tablet .table-cell {
     justify-content: flex-start;
     text-align: left;
@@ -224,22 +237,44 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .projects-container {
-    padding: 10px;
+    padding: 15px;
+    padding-bottom: 70px;
+  }
+  
+  .projects-header {
+    margin-bottom: 30px;
   }
   
   .projects-title {
     font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .projects-content {
+    margin-bottom: 25px;
+  }
+  
+  .tabs-container {
+    flex-direction: row;
+    gap: 0;
   }
   
   .tab-button {
-    height: 45px;
-    font-size: 14px;
+    height: 40px;
+    font-size: 12px;
+    flex: 1;
   }
   
-  /* 480px 이하: project만 표시 */
-  .projects-table-mobile .header-cell,
+  /* 600px 이하: project만 표시 */
+  .projects-table-mobile .header-cell {
+    font-size: 13px;
+    padding: 12px 15px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
   .projects-table-mobile .table-cell {
     justify-content: flex-start;
     text-align: left;

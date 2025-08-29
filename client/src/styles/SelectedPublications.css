@@ -53,6 +53,7 @@
 @media (max-width: 768px) {
   .selected-publications-container {
     padding: 30px 20px;
+    padding-bottom: 80px;
   }
   
   .year-filter-container .ant-flex {
@@ -69,6 +70,7 @@
 @media (max-width: 480px) {
   .selected-publications-container {
     padding: 20px 15px;
+    padding-bottom: 100px;
   }
   
   .publications-header h1 {
