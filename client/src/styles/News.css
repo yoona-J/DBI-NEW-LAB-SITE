@@ -126,6 +126,12 @@
     box-shadow: 0 4px 16px rgba(14, 74, 132, 0.2);
     transform: translateY(-5px);
   }
+
+  .news-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
   
   /* News Date */
   .news-date {
@@ -136,6 +142,15 @@
     margin-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .news-link {
+    flex: 0 0 auto;
+    line-height: 1;
+    color: #0E4A84;
+    text-decoration: none;
   }
   
   .news-item.active .news-date {
