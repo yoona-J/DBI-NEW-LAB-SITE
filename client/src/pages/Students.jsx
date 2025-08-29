@@ -2,10 +2,12 @@ import React from 'react';
 import { GithubOutlined, IdcardOutlined } from '@ant-design/icons';
 import phd_img_1 from '../assets/phd_img_1.jpg';
 import phd_img_2 from '../assets/phd_img_2.jpg';
+import phd_img_3 from '../assets/phd_img_3.jpg';
 import ms_img_1 from '../assets/ms_img_1.jpg';
 import ms_img_2 from '../assets/ms_img_2.jpg';
 import under_img_1 from '../assets/under_img_1.jpg';
 import under_img_2 from '../assets/under_img_2.jpg';
+import under_img_3 from '../assets/under_img_3.jpg';
 import '../styles/Members.css';
 
 export default function Students() {
@@ -67,16 +69,13 @@ export default function Students() {
 
               <div className="student-profile">
                 <div className="profile-image-container">
-                  <div className="profile-image-placeholder">
-                    <div className="placeholder-x-line-1"></div>
-                    <div className="placeholder-x-line-2"></div>
-                  </div>
+                  <img src={phd_img_3} alt="Hosoo Shin" className="profile-image" />
                 </div>
                 
                 <div className="profile-info">
-                  <h1 className="member-name">Hosu Sin (신호수)</h1>
+                  <h1 className="member-name">Hosoo Shin (신호수)</h1>
                   <div className="info-switch-container">
-                    <p className="email">@hanyang.ac.kr</p>
+                    <p className="email">enphilo@hanyang.ac.kr</p>
                     <p className="student-research-keyword"></p>
                     <p className="student-research-focus"></p>
                   </div>
@@ -181,16 +180,13 @@ export default function Students() {
 
               <div className="student-profile">
                 <div className="profile-image-container">
-                  <div className="profile-image-placeholder">
-                    <div className="placeholder-x-line-1"></div>
-                    <div className="placeholder-x-line-2"></div>
-                  </div>
+                  <img src={under_img_3} alt="Hosoo Shin" className="profile-image" />
                 </div>
                 
                 <div className="profile-info">
                   <h1 className="member-name">Seongyeon Son (손성연)</h1>
                   <div className="info-switch-container">
-                    <p className="email">@hanyang.ac.kr</p>
+                    <p className="email">annssy@hanyang.ac.kr</p>
                     <p className="student-research-keyword"></p>
                     <p className="student-research-focus"></p>
                   </div>

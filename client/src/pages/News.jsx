@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../styles/News.css';
+import { LinkOutlined } from '@ant-design/icons';
 
 export default function News() {
   const [activeNewsIndex, setActiveNewsIndex] = useState(0);
@@ -10,74 +11,90 @@ export default function News() {
     {
       id: 'n-1',
       date: 'July 2025',
-      title: 'Received and started a research project (HY-202500000002838)'
+      title: 'Received and started a research project (HY-202500000002838)',
+      link: ''
     },
     {
       id: 'n-2',
       date: 'June 2025',
-      title: 'Lab member, Yoona Chung was awarded the AI SeoulTech scholarship.'
+      title: 'Lab member, Yoona Chung was awarded the AI SeoulTech scholarship.',
+      link: "https://www.etnews.com/20250618000224"
     },
     {
       id: 'n-3',
       date: 'May 2025',
-      title: 'Finished a research project (HY-202500000000191)'
+      title: 'Finished a research project (HY-202500000000191)',
+      link: ''
     },
     {
       id: 'n-4',
       date: 'April 2025',
-      title: 'Received and started a research project (HY-500000000001616)'
+      title: 'Received and started a research project (HY-500000000001616)',
+      link: ''
     },
     {
       id: 'n-5',
       date: 'March 2025',
-      title: 'Received and started a research project (HY-202500000001158)'
+      title: 'Received and started a research project (HY-202500000001158)',
+      link: ''
     },
     {
       id: 'n-6',
       date: 'March 2025',
-      title: 'Visiting Researcher YongHyun Lee has joined DBI Lab'
+      title: 'Visiting Researcher YongHyun Lee has joined DBI Lab',
+      link: ''
     },
     {
       id: 'n-7',
       date: 'February 2025',
-      title: 'Agreement on Academic Research Using Pseudonymized Credit and Financial Data (Agreement with KCB)'
+      title: 'Agreement on Academic Research Using Pseudonymized Credit and Financial Data (Agreement with KCB)',
+      link: ''
     },
     {
       id: 'n-8',
       date: 'January 2025',
-      title: 'Received and started a research project (HY-202500000000191)'
+      title: 'Received and started a research project (HY-202500000000191)',
+      link: ''
     },
     {
       id: 'n-9',
       date: 'December 2024',
-      title: 'Received and started a research project (HY-202400000003726)'
+      title: 'Received and started a research project (HY-202400000003726)',
+      link: ''
     },
     {
       id: 'n-10',
       date: 'November 2024',
-      title: 'Signed a memorandum of understanding with Toss Bank'
+      title: 'Signed a memorandum of understanding with Toss Bank',
+      link: "https://www.etnews.com/20241107000242"
     },
     {
       id: 'n-11',
       date: 'October 2024',
-      title: 'Professor Eunchan Kim received the best TPC award from IEEE/KICS'
+      title: 'Professor Eunchan Kim received the best TPC award from IEEE/KICS',
+      link: ''
     },
     {
       id: 'n-12',
       date: 'September 2024',
-      title: 'Research Professor Jaehyuk Lee has joined DBI Lab'
+      title: 'Research Professor Jaehyuk Lee has joined DBI Lab',
+      link: ''
     },
     {
       id: 'n-13',
       date: 'September 2024',
-      title: 'Received and started a research project (HY-202400000003279)'
+      title: 'Received and started a research project (HY-202400000003279)',
+      link: ''
     },
     {
       id: 'n-14',
       date: 'September 2024',
-      title: 'Data and business intelligence laboratory (DBI Lab.) has opened'
+      title: 'Data and business intelligence laboratory (DBI Lab.) has opened',
+      link: ''
     }
   ];
+
+  const safeLink = (url) => /^https?:\/\//i.test(url) ? url : `https://${url}`;
 
   // 타임라인 높이 계산 함수
   const calculateTimelineHeight = () => {
@@ -238,7 +255,20 @@ export default function News() {
           >
             <div className="timeline-dot"></div>
             <div className="news-content">
-              <div className="news-date">{news.date}</div>
+              <div className="news-card-header">
+                <div className="news-date">{news.date}</div>
+                {news?.link?.trim() ? (
+                  <a
+                    href={safeLink(news.link)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="원문 링크 열기"
+                    className="news-link"
+                  >
+                    <LinkOutlined style={{ color: '#0E4A84', fontSize: 16 }} />
+                  </a>
+                  ) : null}
+              </ div>
               <div className="news-title-text">{news.title}</div>
             </div>
           </div>
