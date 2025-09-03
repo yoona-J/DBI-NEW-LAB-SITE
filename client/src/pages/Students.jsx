@@ -8,6 +8,8 @@ import ms_img_2 from '../assets/ms_img_2.jpg';
 import under_img_1 from '../assets/under_img_1.jpg';
 import under_img_2 from '../assets/under_img_2.jpg';
 import under_img_3 from '../assets/under_img_3.jpg';
+import under_img_4 from '../assets/under_img_4.jpg';
+import under_img_5 from '../assets/under_img_5.png';
 import '../styles/Members.css';
 
 export default function Students() {
@@ -195,10 +197,7 @@ export default function Students() {
 
               <div className="student-profile">
                 <div className="profile-image-container">
-                  <div className="profile-image-placeholder">
-                    <div className="placeholder-x-line-1"></div>
-                    <div className="placeholder-x-line-2"></div>
-                  </div>
+                  <img src={under_img_4} alt="Hosoo Shin" className="profile-image" />
                 </div>
                 
                 <div className="profile-info">
@@ -210,6 +209,22 @@ export default function Students() {
                   </div>
                 </div>
               </div>
+
+              <div className="student-profile">
+                <div className="profile-image-container">
+                  <img src={under_img_5} alt="Hosoo Shin" className="profile-image" />
+                </div>
+                
+                <div className="profile-info">
+                  <h1 className="member-name">Minhee Park (박민희)</h1>
+                  <div className="info-switch-container">
+                    <p className="email">bagminhui927@gmail.com</p>
+                    <p className="student-research-keyword"></p>
+                    <p className="student-research-focus"></p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
