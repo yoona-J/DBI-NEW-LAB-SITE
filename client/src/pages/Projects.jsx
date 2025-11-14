@@ -18,7 +18,7 @@ export default function Projects() {
     current: [
       {
         project: 'Vision AI-based track recognition and hazardous zone classification',
-        support: 'Hyundai Rotem - D&D Corp.',
+        support: 'Hyundai Rotem - D&D',
         date: '2025 - 2026'
       },
       {
@@ -45,14 +45,14 @@ export default function Projects() {
         project: 'Intelligent systems and information technology-based convergence research for solving detailed business problems within heterogeneous industries',
         support: 'Hanyang University',
         date: '2024 - 2025'
-      }
-    ],
-    workInProgress: [
+      },
       {
         project: 'Advancing and integrating AI-driven vision recognition systems',
-        support: '-',
-        date: 'Contract in Progress'
+        support: 'CRK',
+        date: '2025 - 2026'
       },
+    ],
+    workInProgress: [
       {
         project: 'Technology transfer for method and system for secure money transfer authentication based on question answering',
         support: '-',
@@ -67,7 +67,7 @@ export default function Projects() {
     past: [
       {
         project: 'Preliminary research on driver advisory systems and related technologies',
-        support: 'KORAIL - D&D Corp.',
+        support: 'KORAIL - D&D',
         date: '2025'
       },
       {
