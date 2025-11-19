@@ -10,84 +10,133 @@ export default function News() {
   const newsData = [
     {
       id: 'n-1',
+      date: 'November 2025',
+      title: 'Lab member, Hosoo Shin was awarded the AI SeoulTech Scholarship)',
+      link: 'http://etnews.com/20251116000023'
+    },
+    {
+      id: 'n-2',
+      date: 'October 2025',
+      title: 'Finished a research project (HY-202500000003726)',
+      link: ''
+    },
+    {
+      id: 'n-3',
+      date: 'October 2025',
+      title: 'Finished a research project (HY-202500000003279)',
+      link: ''
+    },
+    {
+      id: 'n-4',
+      date: 'September 2025',
+      title: 'Signed a memorandum of understanding with CRK',
+      link: 'http://www.hynews.ac.kr/news/articleView.html?idxno=13383'
+    },
+    {
+      id: 'n-5',
+      date: 'September 2025',
+      title: 'Received and started a research project (HY-202500000003108)',
+      link: ''
+    },
+    {
+      id: 'n-6',
+      date: 'September 2025',
+      title: 'Professor Eunchan Kim was appointed as a Public Officials Training Review Committee Member by the Seoul Facilities Corporation',
+      link: ''
+    },
+    {
+      id: 'n-7',
+      date: 'August 2025',
+      title: 'Professor Eunchan Kim was appointed as a Task Evaluation Committee Member by Kangwon National University',
+      link: ''
+    },
+    {
+      id: 'n-8',
+      date: 'August 2025',
+      title: 'Professor Eunchan Kim was appointed as an AI Advisory Committee Member by the Seoul Facilities Corporation',
+      link: ''
+    },
+
+    {
+      id: 'n-9',
       date: 'July 2025',
       title: 'Received and started a research project (HY-202500000002838)',
       link: ''
     },
     {
-      id: 'n-2',
+      id: 'n-10',
       date: 'June 2025',
       title: 'Lab member, Yoona Chung was awarded the AI SeoulTech scholarship.',
       link: "https://www.etnews.com/20250618000224"
     },
     {
-      id: 'n-3',
+      id: 'n-11',
       date: 'May 2025',
       title: 'Finished a research project (HY-202500000000191)',
       link: ''
     },
     {
-      id: 'n-4',
+      id: 'n-12',
       date: 'April 2025',
       title: 'Received and started a research project (HY-500000000001616)',
       link: ''
     },
     {
-      id: 'n-5',
+      id: 'n-13',
       date: 'March 2025',
       title: 'Received and started a research project (HY-202500000001158)',
       link: ''
     },
     {
-      id: 'n-6',
+      id: 'n-14',
       date: 'March 2025',
       title: 'Visiting Researcher YongHyun Lee has joined DBI Lab',
       link: ''
     },
     {
-      id: 'n-7',
+      id: 'n-15',
       date: 'February 2025',
       title: 'Agreement on Academic Research Using Pseudonymized Credit and Financial Data (Agreement with KCB)',
       link: ''
     },
     {
-      id: 'n-8',
+      id: 'n-16',
       date: 'January 2025',
       title: 'Received and started a research project (HY-202500000000191)',
       link: ''
     },
     {
-      id: 'n-9',
+      id: 'n-17',
       date: 'December 2024',
       title: 'Received and started a research project (HY-202400000003726)',
       link: ''
     },
     {
-      id: 'n-10',
+      id: 'n-18',
       date: 'November 2024',
       title: 'Signed a memorandum of understanding with Toss Bank',
       link: "https://www.etnews.com/20241107000242"
     },
     {
-      id: 'n-11',
+      id: 'n-19',
       date: 'October 2024',
       title: 'Professor Eunchan Kim received the best TPC award from IEEE/KICS',
       link: ''
     },
     {
-      id: 'n-12',
+      id: 'n-20',
       date: 'September 2024',
       title: 'Research Professor Jaehyuk Lee has joined DBI Lab',
       link: ''
     },
     {
-      id: 'n-13',
+      id: 'n-21',
       date: 'September 2024',
       title: 'Received and started a research project (HY-202400000003279)',
       link: ''
     },
     {
-      id: 'n-14',
+      id: 'n-22',
       date: 'September 2024',
       title: 'Data and business intelligence laboratory (DBI Lab.) has opened',
       link: ''

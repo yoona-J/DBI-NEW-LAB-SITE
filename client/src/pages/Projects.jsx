@@ -17,6 +17,11 @@ export default function Projects() {
   const projectsData = {
     current: [
       {
+        project: 'Advancing and integrating AI-driven vision recognition systems',
+        support: 'CRK',
+        date: '2025 - 2026'
+      },
+      {
         project: 'Vision AI-based track recognition and hazardous zone classification',
         support: 'Hyundai Rotem - D&D',
         date: '2025 - 2026'
@@ -27,29 +32,9 @@ export default function Projects() {
         date: '2025 - 2026'
       },
       {
-        project: 'Research on innovative energy-fusion technology for future mobility transition',
-        support: 'Hanyang University',
-        date: '2025'
-      },
-      {
         project: 'Academic research on pseudonymized credit and financial data',
         support: 'KCB',
         date: '2025 - 2028'
-      },
-      {
-        project: 'AI-based exercise prescription framework to optimize healthcare services',
-        support: 'Hanyang University',
-        date: '2024 - 2025'
-      },
-      {
-        project: 'Intelligent systems and information technology-based convergence research for solving detailed business problems within heterogeneous industries',
-        support: 'Hanyang University',
-        date: '2024 - 2025'
-      },
-      {
-        project: 'Advancing and integrating AI-driven vision recognition systems',
-        support: 'CRK',
-        date: '2025 - 2026'
       },
     ],
     workInProgress: [
@@ -66,9 +51,24 @@ export default function Projects() {
     ],
     past: [
       {
+        project: 'Research on innovative energy-fusion technology for future mobility transition',
+        support: 'Hanyang University',
+        date: '2025'
+      },
+      {
         project: 'Preliminary research on driver advisory systems and related technologies',
         support: 'KORAIL - D&D',
         date: '2025'
+      },
+      {
+        project: 'AI-based exercise prescription framework to optimize healthcare services',
+        support: 'Hanyang University',
+        date: '2024 - 2025'
+      },
+      {
+        project: 'Intelligent systems and information technology-based convergence research for solving detailed business problems within heterogeneous industries',
+        support: 'Hanyang University',
+        date: '2024 - 2025'
       },
       {
         project: 'Assessment of regional lung function and particle inhalation characteristics during inhaler use in patients with COPD and asthma using quantitative CT and computational fluid dynamics',

@@ -5,7 +5,7 @@ import phd_img_2 from '../assets/phd_img_2.jpg';
 import phd_img_3 from '../assets/phd_img_3.jpg';
 import phd_img_4 from '../assets/phd_img_4.jpg';
 import phd_img_5 from '../assets/phd_img_5.jpg';
-// import phd_img_6 from '../assets/phd_img_6.jpg';
+import phd_img_6 from '../assets/phd_img_6.jpg';
 import ms_img_1 from '../assets/ms_img_1.jpg';
 import ms_img_2 from '../assets/ms_img_2.jpg';
 import ms_img_3 from '../assets/ms_img_3.jpg';
@@ -121,7 +121,7 @@ export default function Students() {
 
               <div className="student-profile">
                 <div className="profile-image-container">
-                  {/* <img src={phd_img_6} alt="BitChan Eom" className="profile-image" /> */}
+                  <img src={phd_img_6} alt="BitChan Eom" className="profile-image" />
                 </div>
                 
                 <div className="profile-info">

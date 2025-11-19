@@ -78,6 +78,8 @@ export default function Professor() {
                     <p>• Department of Information Systems (Primary)</p>
                     <p>• Department of Artificial Intelligence (Adjunct)</p>
                     <p>• Department of Data Science (Joint)</p>
+                    <p>• Artificial Intelligence institute of Hanyang University</p>
+                    <p>• Hanyang Institute of Advanced Artificial Intelligence</p>
                   </div>
                 </div>
                 <p>• Lecturer, Seoul National University (2023–2024)</p>
@@ -90,6 +92,7 @@ export default function Professor() {
 
               <p><strong>Evaluation & Advisory Roles</strong></p>
               <div style={{ marginLeft: '20px' }}>
+                <p>• Expert Committee Member, Public Officials Training Review Committee, Seoul Facilities Corporation (Sep. 2025 – present)</p>
                 <p>• Expert Committee Member, AI Advisory Committee, Seoul Facilities Corporation (Aug. 2025 – present)</p>
                 <p>• Expert Committee Member, Task Review Committee, Kangwon National University (Aug. 2025 – present)</p>
                 <p>• Evaluation Committee Member, Korea Health Industry Development Institute (Nov. 2024 – present)</p>
