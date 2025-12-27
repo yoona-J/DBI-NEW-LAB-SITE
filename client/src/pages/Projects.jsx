@@ -17,6 +17,21 @@ export default function Projects() {
   const projectsData = {
     current: [
       {
+        project: 'Deep learning-based traffic congestion prediction model for intelligent transportation system optimization',
+        support: 'Hanyang University',
+        date: '2025 - 2026'
+      },
+      {
+        project: 'Product data construction',
+        support: 'CRK',
+        date: '2025 - 2026'
+      },
+      {
+        project: 'LLM data validation',
+        support: 'TTA - WesleyQuest',
+        date: '2025 - 2026'
+      },
+      {
         project: 'Advancing and integrating AI-driven vision recognition systems',
         support: 'CRK',
         date: '2025 - 2026'

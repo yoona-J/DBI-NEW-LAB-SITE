@@ -61,6 +61,26 @@ export default function Students() {
 
               <div className="student-profile">
                 <div className="profile-image-container">
+                  <img src={ms_img_1} alt="Jeongmin Hong" className="profile-image" />
+                </div>
+                
+                <div className="profile-info">
+                  <h1 className="member-name">Jeongmin Hong (홍정민)</h1>
+                  <div className="info-switch-container">
+                    <p className="email">maxhong99@hanyang.ac.kr</p>
+                    <p className="student-research-keyword">Solutions for Holistic Wellness</p>
+                    <p className="student-research-focus">Intelligent Physiology, AI Applications</p>
+                  </div>
+                </div>
+                <div className="contact-icons">
+                  <a href="https://orcid.org/0009-0002-0278-8818" target="_blank" rel="noopener noreferrer" className="contact-icon orcid">
+                    <IdcardOutlined />
+                  </a>
+                </div>
+              </div>
+
+              <div className="student-profile">
+                <div className="profile-image-container">
                   <img src={phd_img_1} alt="JinSung Park" className="profile-image" />
                 </div>
                 
@@ -98,8 +118,8 @@ export default function Students() {
                   <h1 className="member-name">Liqiu Suo (소리추)</h1>
                   <div className="info-switch-container">
                     <p className="email">soda0808@hanyang.ac.kr</p>
-                    <p className="student-research-keyword">Solutions for E-commerce behavior</p>
-                    <p className="student-research-focus">AI Applications</p>
+                    <p className="student-research-keyword">Solutions for User Behavior</p>
+                    <p className="student-research-focus">User Analysis, AI Applications</p>
                   </div>
                 </div>
               </div>
@@ -142,25 +162,6 @@ export default function Students() {
           <div className="student-category">
             <h3 className="category-title">Master's Program</h3>
             <div className="students-grid">
-              <div className="student-profile">
-                <div className="profile-image-container">
-                  <img src={ms_img_1} alt="Jeongmin Hong" className="profile-image" />
-                </div>
-                
-                <div className="profile-info">
-                  <h1 className="member-name">Jeongmin Hong (홍정민)</h1>
-                  <div className="info-switch-container">
-                    <p className="email">maxhong99@hanyang.ac.kr</p>
-                    <p className="student-research-keyword">Solutions for Holistic Wellness</p>
-                    <p className="student-research-focus">Intelligent Physiology, AI Applications</p>
-                  </div>
-                </div>
-                <div className="contact-icons">
-                  <a href="https://orcid.org/0009-0002-0278-8818" target="_blank" rel="noopener noreferrer" className="contact-icon orcid">
-                    <IdcardOutlined />
-                  </a>
-                </div>
-              </div>
 
               <div className="student-profile">
                 <div className="profile-image-container">
@@ -189,11 +190,11 @@ export default function Students() {
                 </div>
                 
                 <div className="profile-info">
-                  <h1 className="member-name">Xia Lin (하림)</h1>
+                  <h1 className="member-name">Lin Xia (하림)</h1>
                   <div className="info-switch-container">
                     <p className="email">harim1002@hanyang.ac.kr</p>
-                    <p className="student-research-keyword"></p>
-                    <p className="student-research-focus"></p>
+                    <p className="student-research-keyword">Solutions for Medical Intelligence</p>
+                    <p className="student-research-focus">Precision Medicine, AI Applications</p>
                   </div>
                 </div>
               </div>

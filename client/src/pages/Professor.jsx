@@ -75,10 +75,10 @@ export default function Professor() {
                 <div style={{ marginLeft: '20px' }}>
                   <p>Affiliations</p>
                   <div style={{ marginLeft: '20px' }}>
-                    <p>• Department of Information Systems (Primary)</p>
-                    <p>• Department of Artificial Intelligence (Adjunct)</p>
-                    <p>• Department of Data Science (Joint)</p>
-                    <p>• Artificial Intelligence institute of Hanyang University</p>
+                    <p>• Department of Information Systems (Primary), URL: <a href='http://is.hanyang.ac.kr/' style={{color: 'blue'}}>http://is.hanyang.ac.kr/</a></p>
+                    <p>• Department of Artificial Intelligence (Adjunct), URL: <a href='https://nextai.hanyang.ac.kr/' style={{color: 'blue'}}>https://nextai.hanyang.ac.kr/</a></p>
+                    <p>• Department of Data Science (Joint), URL: <a href='https://hyds.hanyang.ac.kr/' style={{color: 'blue'}}>https://hyds.hanyang.ac.kr/</a></p>
+                    <p>• Artificial Intelligence institute of Hanyang University, URL: <a href='https://hyair.hanyang.ac.kr/' style={{color: 'blue'}}>https://hyair.hanyang.ac.kr/</a></p>
                     <p>• Hanyang Institute of Advanced Artificial Intelligence</p>
                   </div>
                 </div>
@@ -92,6 +92,7 @@ export default function Professor() {
 
               <p><strong>Evaluation & Advisory Roles</strong></p>
               <div style={{ marginLeft: '20px' }}>
+                <p>• Evaluation Committee Member, Korea Technology and Information Promotion Agency for SMEs (TIPA) (Nov. 2025 – present)</p>
                 <p>• Expert Committee Member, Public Officials Training Review Committee, Seoul Facilities Corporation (Sep. 2025 – present)</p>
                 <p>• Expert Committee Member, AI Advisory Committee, Seoul Facilities Corporation (Aug. 2025 – present)</p>
                 <p>• Expert Committee Member, Task Review Committee, Kangwon National University (Aug. 2025 – present)</p>

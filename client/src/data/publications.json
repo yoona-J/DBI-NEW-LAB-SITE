@@ -1,5 +1,25 @@
 [
   {
+    "title": "Layered Feature Engineering for E-commerce Purchase Prediction: A Hierarchical Evaluation on Taobao User Behavior Datasets",
+    "authors": ["Liqiu Suo", "Lin Xia", "Yoona Chung"],
+    "year": 2025,
+    "type": "Journal",
+    "journal": "CMC-Computers, Materials & Continua",
+    "volume": "Vol.",
+    "category": "SCI",
+    "link": ""
+  },
+  {
+    "title": "Muscle synergy-driven ensemble learning framework for individualized stroke gait rehabilitation",
+    "authors": ["Jaehyuk Lee"],
+    "year": 2025,
+    "type": "Journal",
+    "journal": "Scientific Reports",
+    "volume": "Vol.15",
+    "category": "SCI",
+    "link": "https://doi.org/10.1038/s41598-025-28818-5"
+  },
+  {
     "title": "Multi-task Deep Learning Framework for Enhancing Mayo Endoscopic Score Classification in Ulcerative Colitis",
     "authors": ["Jaehyuk Lee"],
     "year": 2025,
@@ -7,7 +27,7 @@
     "journal": "Digital Health",
     "volume": "Vol.11",
     "category": "SCI/SSCI",
-    "link": "https://journals.sagepub.com/doi/10.1177/20552076251356396"
+    "link": "https://doi.org/10.1177/20552076251356396"
   },
   {
     "title": "Primary Determinants and Strategic Implications for Customer Loyalty in Pet-Related Vertical E-Commerce: A Machine Learning Approach",
@@ -17,7 +37,7 @@
     "journal": "Systems",
     "volume": "Vol.13, No.3",
     "category": "SSCI",
-    "link": "https://www.mdpi.com/2079-8954/13/3/175"
+    "link": "https://doi.org/10.3390/systems13030175"
   },
   {
     "title": "Precision Forecasting in Colorectal Oncology: Predicting Six-Month Survival to Optimize Clinical Decisions",
@@ -27,7 +47,7 @@
     "journal": "Electronics",
     "volume": "Vol.14, No.5",
     "category": "SCI",
-    "link": "https://www.mdpi.com/2079-9292/14/5/880"
+    "link": "https://doi.org/10.3390/electronics14050880"
   },
   {
     "title": "Smoothing the Subjective Financial Risk Tolerance: Volatility and Market Implications",
@@ -37,7 +57,7 @@
     "journal": "Mathematics",
     "volume": "Vol.13, No.4",
     "category": "SCI",
-    "link": "https://www.mdpi.com/2227-7390/13/4/680"
+    "link": "https://doi.org/10.3390/math13040680"
   },
   {
     "title": "Understanding the Adoption Intention of Financial Data Retrieval Services: An Empirical Analysis of My Data",
@@ -47,7 +67,7 @@
     "journal": "Heliyon",
     "volume": "Vol.11, No.1",
     "category": "SCI",
-    "link": "https://linkinghub.elsevier.com/retrieve/pii/S2405844024173653"
+    "link": "https://doi.org/10.1016/j.heliyon.2024.e41334"
   },
   {
     "title": "Green Total Factor Productivity and Its Nonlinear Relationship With Coordinated FDI Development: Evidence From Panel Models",
@@ -57,7 +77,7 @@
     "journal": "Natural Resource Modeling",
     "volume": "Vol.38, No.1",
     "category": "SCI",
-    "link": "https://onlinelibrary.wiley.com/doi/10.1111/nrm.12418"
+    "link": "https://doi.org/10.1111/nrm.12418"
   },
   {
     "title": "Augmented ELBO regularization for enhanced clustering in variational autoencoders",
@@ -67,7 +87,7 @@
     "journal": "Neurocomputing",
     "volume": "Vol.614",
     "category": "SCI",
-    "link": "https://linkinghub.elsevier.com/retrieve/pii/S0925231224015662"
+    "link": "https://doi.org/10.1016/j.neucom.2024.128795"
   },
   {
     "title": "SICGNN: Structurally informed convolutional graph neural networks for protein classification",
@@ -77,7 +97,7 @@
     "journal": "Machine Learning: Science and Technology",
     "volume": "Vol.5, No.4",
     "category": "SCI",
-    "link": "https://iopscience.iop.org/article/10.1088/2632-2153/ad979b"
+    "link": "https://doi.org/10.1088/2632-2153/ad979b"
   },
   {
     "title": "Method and System for Authenticating Transfer based on Questioning",
@@ -87,7 +107,7 @@
     "journal": "KR Patent",
     "volume": "Registered",
     "category": "KR Patent",
-    "link": "https://www.kipris.or.kr/khome/main.do"
+    "link": "https://doi.org/10.8080/1020220000365"
   },
   {
     "title": "Data-Driven Stroke Classification Utilizing Electromyographic Muscle Features and Machine Learning Techniques",
@@ -97,7 +117,7 @@
     "journal": "Applied Sciences-Basel",
     "volume": "Vol.14, No.18",
     "category": "SCI",
-    "link": "https://www.mdpi.com/2076-3417/14/18/8430"
+    "link": "https://doi.org/10.3390/app14188430"
   },
   {
     "title": "Climate policy uncertainty and its impact on energy demand: An empirical evidence using the Fourier augmented ARDL model",
@@ -107,7 +127,7 @@
     "journal": "Economic Analysis and Policy",
     "volume": "Vol.84",
     "category": "SSCI",
-    "link": "https://linkinghub.elsevier.com/retrieve/pii/S0313592624002108"
+    "link": "https://doi.org/10.1016/j.eap.2024.08.021"
   },
   {
     "title": "Opportunistic Offloading Scheme for Content Delivery Service using Electro-Mobility Networks",
@@ -117,7 +137,7 @@
     "journal": "IET Intelligent Transport Systems",
     "volume": "Vol.18, No.4",
     "category": "SCI",
-    "link": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/itr2.12255"
+    "link": "https://doi.org/10.1049/itr2.12255"
   },
   {
     "title": "Deep Learning-based Delinquent Taxpayer Prediction: A Scientific Administrative Approach",
@@ -127,7 +147,7 @@
     "journal": "KSII Transactions on Internet and Information Systems",
     "volume": "Vol.18, No.1",
     "category": "SCI",
-    "link": "https://itiis.org/digital-library/90386"
+    "link": "https://doi.org/10.3837/tiis.2024.01.003"
   },
   {
     "title": "LF-Transformer: Latent Factorizer Transformer for Tabular Learning",
@@ -137,7 +157,7 @@
     "journal": "IEEE Access",
     "volume": "Vol.12",
     "category": "SCI",
-    "link": "https://ieeexplore.ieee.org/document/10401112/"
+    "link": "https://doi.org/10.1109/ACCESS.2024.3354972"
   },
   {
     "title": "Identifying Hidden Factors Associated with Household Emergency Fund Holdings: A Machine Learning Application",
@@ -147,7 +167,7 @@
     "journal": "Mathematics",
     "volume": "Vol.12, No.2",
     "category": "SCI",
-    "link": "https://www.mdpi.com/2227-7390/12/2/182"
+    "link": "https://doi.org/10.3390/math12020182"
   },
   {
     "title": "Machine Learning-based Prediction of Relative Regional Air Volume Change",
@@ -157,7 +177,7 @@
     "journal": "KSII Transactions on Internet and Information Systems",
     "volume": "Vol.17, No.2",
     "category": "SCI",
-    "link": "https://itiis.org/digital-library/38403"
+    "link": "https://doi.org/10.3837/tiis.2023.02.016"
   },
   {
     "title": "Factors Affecting the Adoption Intention of New Electronic Authentication Services: A Convergent Model Approach of VAM, PMT, and TPB",
@@ -167,7 +187,7 @@
     "journal": "IEEE Access",
     "volume": "Vol.11",
     "category": "SCI",
-    "link": "https://ieeexplore.ieee.org/document/10040667"
+    "link": "https://doi.org/10.1109/ACCESS.2023.3243183"
   },
   {
     "title": "TinyML-based Classification in ECG Monitoring Embedded System",
@@ -177,7 +197,7 @@
     "journal": "CMC-Computers, Materials & Continua",
     "volume": "Vol.75, No.1",
     "category": "SCI",
-    "link": "https://www.techscience.com/cmc/v75n1/51426"
+    "link": "https://doi.org/10.32604/cmc.2023.031663"
   },
   {
     "title": "ALBERT with Knowledge Graph Encoder Utilizing Semantic Similarity for Commonsense Question Answering",
@@ -187,7 +207,7 @@
     "journal": "Intelligent Automation & Soft Computing",
     "volume": "Vol.36, No.1",
     "category": "SCI",
-    "link": "https://www.techscience.com/iasc/v36n1/50030"
+    "link": "https://doi.org/10.32604/iasc.2023.032783"
   },
   {
     "title": "A Case Study of Digital Transformation : Focusing on the Financial Sector in South Korea and Overseas",
@@ -197,7 +217,7 @@
     "journal": "Asia Pacific Journal of Information Systems",
     "volume": "Vol.32, No.3",
     "category": "Scopus",
-    "link": "https://www.apjis.or.kr/common/sub/pastissues_view.asp?UID=5268&GotoPage=1&sIssue_year=2022&svolNo=vol.%2032%20no.%203&sKey=&sVal="
+    "link": "https://doi.org/10.14329/apjis.2022.32.3.537"
   },
   {
     "title": "The Association Between SOC and Land Prices Considering Spatial Heterogeneity Based on Finite Mixture Modeling",
@@ -207,7 +227,7 @@
     "journal": "The Korea Spatial Planning Review",
     "volume": "Vol.114",
     "category": "KCI",
-    "link": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002882158"
+    "link": "https://doi.org/10.15793/kspr.2022.114..004"
   },
   {
     "title": "SHOMY: Detection of Small Hazardous Objects using the You Only Look Once Algorithm",
@@ -217,7 +237,7 @@
     "journal": "KSII Transactions on Internet and Information Systems",
     "volume": "Vol.16, No.8",
     "category": "SCI",
-    "link": "https://itiis.org/digital-library/25914"
+    "link": "https://doi.org/10.3837/tiis.2022.08.012"
   },
   {
     "title": "System and Method for Providing Loan Service based on the Value in Use",
@@ -227,7 +247,7 @@
     "journal": "KR Patent",
     "volume": "Registered",
     "category": "KR Patent",
-    "link": "https://www.kipris.or.kr/khome/main.do"
+    "link": "https://doi.org/10.8080/1020190089899"
   },
   {
     "title": "The Details and Outlook of Three Data Acts Amendment in South Korea: With a Focus on the Changes of Domestic Financial and Data Industry",
@@ -237,7 +257,7 @@
     "journal": "Informatization Policy",
     "volume": "Vol.28, No.3",
     "category": "KCI",
-    "link": "https://koreascience.or.kr/article/JAKO202128557470160.page"
+    "link": "https://doi.org/10.22693/niaip.2021.28.3.049"
   },
   {
     "title": "A Securities Company's Customer Churn Prediction Model and Causal Inference with SHAP Value",
@@ -247,6 +267,6 @@
     "journal": "The Journal of Bigdata",
     "volume": "Vol.5, No.2",
     "category": "KCI",
-    "link": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002675683"
+    "link": "https://doi.org/10.36498/kbigdt.2020.5.2.215"
   }
 ]
