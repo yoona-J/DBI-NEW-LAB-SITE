@@ -6,34 +6,40 @@ export default function WorkInProgressPublications() {
   // Work-in-Progress 논문 데이터
   const workInProgressData = [
     {
-      title: "Discrete Ricci Flow for Robust Post-Hoc Out-of-Distribution Detection"
+      title: "Strategic default detection leveraging card spending: Static-feature ensemble and cluster-augmented signals for non time-series modeling"
     },
     {
-      title: "A Novel Binary Crossover Operator-Based Genetic Algorithm for Traveling Salesman Problem"
+      title: "C-Swin: Integrating CNN and hybrid shifted window in transformer for lung cancer classification"
     },
     {
-      title: "C-Swin: Integrating CNN and Hybrid Shifted Window in Transformer for Lung Cancer Classification"
+      title: "Interpretable prediction of private brand purchases by pet type in e-commerce for consumer behavior analysis using real-world transaction data"
     },
     {
-      title: "Diagnosis-Aware Multitask Fine-Tuning of Whisper for Dysarthric Speech Recognition"
+      title: "Neuro-deep fuzzy system for estimation of NO₂ concentration in soil and groundwater on highways from remote sensing imagesn"
     },
     {
-      title: "Strategic Default Detection Leveraging Card Spending: A Static Feature Ensemble Approach"
+      title: "Hybrid CNN–Transformer architecture for personal credit risk prediction: Comparative insights into model explainability"
     },
     {
-      title: "Interpretable Prediction of Private Brand Purchases by Pet Type in E-Commerce for Consumer Behavior Analysis Using Real-World Transaction Data"
-    },
-    {
-      title: "Hybrid CNN-Transformer Architecture for Personal Credit Risk Prediction with Comparative Insights into Model Explainability"
+      title: "Diagnosis-aware multitask fine-tuning of Whisper for dysarthric speech recognition"
     },
     {
       title: "Fostering educational innovation in resource-constrained environments: A design science approach using sLLM-based chatbots in HRD education"
     },
     {
-      title: "Muscle synergy-driven ensemble learning framework for personalized stroke gait rehabilitation"
+      title: "Month-conditioned boosting framework with SHAP-in-the-loop for short-term electricity load forecasting"
     },
     {
-      title: "Neuro-deep fuzzy system for estimation of NO2 concentration in soil and groundwater on highways from remote sensing images"
+      title: "ENSGA-II: An Efficient NSGA-II Framework with Finite-Difference Diversity for Router Placement Optimization"
+    },
+    {
+      title: "An interpretable stacking ensemble with TabNet-enhanced features for breast cancer diagnosis"
+    },
+    {
+      title: "Fair credit risk assessment through two-stage false negative recovery: Balancing financial inclusion and stability"
+    },
+    {
+      title: "Resource-Constrained Edge AI Solution for Smart Farming: Real-Time Pest and Disease Detection in Chili Pepper Fields"
     }
   ];
 
