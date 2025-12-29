@@ -41,7 +41,7 @@ export default function News() {
     {
       id: 'n-6',
       date: 'November 2025',
-      title: 'Lab member, Hosoo Shin was awarded the AI SeoulTech Scholarship)',
+      title: 'Lab member, Hosoo Shin was awarded the AI SeoulTech Scholarship',
       link: 'http://etnews.com/20251116000023'
     },
     {
