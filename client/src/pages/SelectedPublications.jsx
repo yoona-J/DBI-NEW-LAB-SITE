@@ -70,6 +70,7 @@ export default function SelectedPublications() {
   const getCategoryColor = (category) => {
     if (category.includes('SCI')) return 'blue';
     if (category.includes('SSCI')) return 'green';
+    if (category === 'Top Conference') return 'magenta';
     if (category.includes('KCI')) return 'orange';
     if (category.includes('Scopus')) return 'purple';
     if (category.includes('Patent')) return 'red';

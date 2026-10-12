@@ -184,6 +184,7 @@ export default function PublicationForm() {
               <Select style={{ width: 140 }}>
                 <Select.Option value="SCI">SCI</Select.Option>
                 <Select.Option value="SSCI">SSCI</Select.Option>
+                <Select.Option value="Top Conference">Top Conference</Select.Option>
                 <Select.Option value="SCI/SSCI">SCI/SSCI</Select.Option>
                 <Select.Option value="KCI">KCI</Select.Option>
                 <Select.Option value="Scopus">Scopus</Select.Option>

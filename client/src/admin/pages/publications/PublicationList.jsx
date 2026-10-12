@@ -92,6 +92,7 @@ export default function PublicationList() {
   const categoryColors = {
     'SCI': 'blue',
     'SSCI': 'purple',
+    'Top Conference': 'magenta',
     'SCI/SSCI': 'geekblue',
     'KCI': 'green',
     'Scopus': 'cyan',
@@ -228,6 +229,7 @@ export default function PublicationList() {
                   { value: 'SCI/SSCI', label: 'SCI/SSCI' },
                   { value: 'KCI', label: 'KCI' },
                   { value: 'Scopus', label: 'Scopus' },
+                  { value: 'Top Conference', label: 'Top Conference' },
                   { value: 'KR Patent', label: 'KR Patent' },
                 ]}
               />

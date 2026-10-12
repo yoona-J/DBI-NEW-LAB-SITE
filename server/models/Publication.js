@@ -43,7 +43,7 @@ const PublicationSchema = new Schema({
   category: {
     type: String,
     enum: {
-      values: ['SCI', 'SSCI', 'SCI/SSCI', 'KCI', 'Scopus', 'KR Patent', 'US Patent', 'Other'],
+      values: ['SCI', 'SSCI', 'Top Conference', 'SCI/SSCI', 'KCI', 'Scopus', 'KR Patent', 'US Patent', 'Other'],
       message: '유효하지 않은 카테고리입니다.'
     },
     default: 'Other'
