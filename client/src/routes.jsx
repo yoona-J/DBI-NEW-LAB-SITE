@@ -2,6 +2,7 @@
 import { lazy } from 'react'
 import { createBrowserRouter, Navigate } from 'react-router-dom'
 import App from './App'
+import RouteError from './components/RouteError'
 
 // Public Pages
 const Home = lazy(() => import('./pages/Home'))
@@ -37,6 +38,7 @@ export const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <RouteError />,
     children: [
       { index: true, element: <Home /> },
       { path: 'research', element: <Research /> },
@@ -57,10 +59,12 @@ export const router = createBrowserRouter([
   {
     path: '/admin/login',
     element: <AdminLogin />,
+    errorElement: <RouteError />,
   },
   {
     path: '/admin',
     element: <AdminLayout />,
+    errorElement: <RouteError />,
     children: [
       { index: true, element: <AdminDashboard /> },
       { path: 'courses', element: <CourseList /> },
